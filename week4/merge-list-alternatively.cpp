@@ -15,7 +15,7 @@ void mergeList(struct Node **p, struct Node **q)
         l1 = l1->next;
         temp = l2;
         l2 = l2->next;
-        delete l2;
+        delete temp;
     }
     *q = l2;
 }
